@@ -1,9 +1,7 @@
 :root {
     --brend-color: #2E2F42;
-}
-
-body{
-    font-family: 'Roboto';sans-serif;
+    --text-color:#434455;
+    --white-color:#FFFFFF;
 }
 .list {
     list-style:none;
@@ -11,8 +9,11 @@ body{
 .link {
     text-decoration:none;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .logo-web {
-    font-family: 'Raleway';sans-serif;
+    font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -21,7 +22,7 @@ body{
     color: #4D5AE5; 
 }
 .logo-studio {
-    font-family: 'Raleway';sans-serif;
+    font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -49,7 +50,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;   
-    color: #434455; 
+    color:var(--text-color); 
 }
 
 .address-tel {
@@ -57,7 +58,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 .hero {
     background-color: var(--brend-color); 
@@ -67,8 +68,18 @@ body{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color:var(--white-color);
 }
+.button-hero {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color:var(--white-color);
+    background-color: #4D5AE5;
+}
+
 /* SECTION 1 */
 .name-strategy {
     font-weight: 500;
@@ -82,7 +93,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 .name-punctuality {
     font-weight: 500;
@@ -96,7 +107,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;    
+    color: var(--text-color);    
 }
 .name-diligence {
     font-weight: 500;
@@ -110,7 +121,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 .name-technologies {
     font-weight: 500;
@@ -124,7 +135,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 /* <!-- SECTION 2 --> */
 .work {
@@ -155,7 +166,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 /* FOOTER */
 .footer {
@@ -163,13 +174,11 @@ body{
 }
 .text-footer {
     font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #E7E9FC;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
 }
-
-
 /* PORTFOLIO BATTON */
 .batton-portfolio{
     font-weight: 500;
@@ -184,7 +193,7 @@ color: #E7E9FC;
 .batton-portfolio:hover,
 .batton-portfolio:focus {
     background: #404BBF;
-    color: #4D5AE5;
+    color:var(--white-color);
 }
 /*  PORTFOLIO IMG*/
 .name-img {
@@ -199,6 +208,5 @@ color: #E7E9FC;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
-

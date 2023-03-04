@@ -1,6 +1,5 @@
 :root {
     --brend-color: #2E2F42;
-    --text-color:#434455;
     --white-color:#FFFFFF;
 }
 .list {
@@ -11,12 +10,13 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    --text-color: #434455;
 }
 .logo-web {
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5; 
@@ -43,8 +43,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-    color:var(--brend-color);   
+    color:var(--brend-color);       
 }
+.menu-link:hover,
+.menu-link:focus {
+    color: #404BBF;
+}
+
 .address-mail {
     font-weight: 400;
     font-size: 16px;
@@ -67,6 +72,7 @@ body {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
     letter-spacing: 0.02em;
     color:var(--white-color);
 }
@@ -78,6 +84,7 @@ body {
     letter-spacing: 0.04em;
     color:var(--white-color);
     background-color: #4D5AE5;
+    cursor: pointer;
 }
 
 /* SECTION 1 */
@@ -142,7 +149,9 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
     color: var(--brend-color);   
 }
 
@@ -181,6 +190,7 @@ body {
 }
 /* PORTFOLIO BATTON */
 .batton-portfolio{
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -189,6 +199,7 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     color: #4D5AE5;
+    cursor: pointer;
 }
 .batton-portfolio:hover,
 .batton-portfolio:focus {

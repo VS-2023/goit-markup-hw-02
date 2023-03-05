@@ -1,6 +1,7 @@
 :root {
     --brend-color: #2E2F42;
     --white-color:#FFFFFF;
+    --text-color: #434455;
 }
 .list {
     list-style:none;
@@ -10,7 +11,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    --text-color: #434455;
+    color: #434455;
 }
 .logo-web {
     font-family: 'Raleway',sans-serif;
@@ -49,6 +50,9 @@ body {
 .menu-link:focus {
     color: #404BBF;
 }
+.heder-address{
+    font-style: normal;
+}
 
 .address-mail {
     font-weight: 400;
@@ -58,6 +62,10 @@ body {
     color:var(--text-color); 
 }
 
+.address-mail:hover,
+.address-mail:focus {
+    color: #404BBF;
+}
 .address-tel {
     font-weight: 400;
     font-size: 16px;
@@ -65,10 +73,15 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
+.address-tel:hover,
+.address-tel:focus {
+    color: #404BBF;
+}
 .hero {
     background-color: var(--brend-color); 
 }
 .pege-hero {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -102,48 +115,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
-.name-punctuality {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--brend-color);
-}
-.text-punctuality {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);    
-}
-.name-diligence {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--brend-color);
-}
-.text-diligence {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-}
-.name-technologies {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--brend-color);
-}
-.text-technologies {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-}
+
 /* <!-- SECTION 2 --> */
 .work {
     font-weight: 700;

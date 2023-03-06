@@ -7,12 +7,7 @@
     --paragraph-color:#E7E9FC;
     --button-color:#404BBF;
 }
-.list {
-    list-style:none;
-}
-.link {
-    text-decoration:none;
-}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -20,6 +15,13 @@ body {
 }
 .header {
     background-color:var(--white-color);
+}
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
 }
 .logo-web {
     font-family: 'Raleway',sans-serif;
@@ -58,7 +60,7 @@ body {
 .menu-link:focus {
     color:var(--button-color);
 }
-.heder-address{
+.address-heder{
     font-style: normal;
 }
 

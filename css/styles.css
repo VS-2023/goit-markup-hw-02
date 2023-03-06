@@ -73,12 +73,7 @@ body {
 .address-mail:focus {
     color:var(--button-color);
 }
-.address-tel {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; 
-    color:var(--text-color);  
-}
+
 
 .hero {
     background-color:var(--brend-color); 
@@ -99,6 +94,7 @@ body {
     letter-spacing: 0.04em;
     color:var(--white-color);
     background-color:var(--logo-color);
+    cursor: pointer;
 }
 .button-hero:hover,
 .button-hero:focus {

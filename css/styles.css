@@ -2,6 +2,10 @@
     --brend-color: #2E2F42;
     --white-color:#FFFFFF;
     --text-color: #434455;
+    --logo-color:#4D5AE5;
+    --team-color:#F4F4FD;
+    --paragraph-color:#E7E9FC;
+    --button-color:#404BBF;
 }
 .list {
     list-style:none;
@@ -11,7 +15,11 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
+    font-weight: 400;
+    color:var(--text-color);
+}
+.header {
+    background-color:var(--white-color);
 }
 .logo-web {
     font-family: 'Raleway',sans-serif;
@@ -20,7 +28,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5; 
+    color:var(--logo-color); 
 }
 .logo-studio {
     font-family: 'Raleway',sans-serif;
@@ -29,7 +37,7 @@ body {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase; 
-    color: var(--brend-color);   
+    color:var(--brend-color);   
 }
 .logo-footer {
     font-weight: 800;
@@ -37,7 +45,7 @@ body {
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #F4F4FD;
+    color:var(--team-color);
 }
 .menu-link {
     font-weight: 500;
@@ -48,27 +56,32 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: #404BBF;
+    color:var(--button-color);
 }
 .heder-address{
     font-style: normal;
 }
 
 .address-mail {
-    font-weight: 400;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;   
-    color:var(--text-color); 
+    letter-spacing: 0.02em; 
+    color:var(--text-color);  
 }
-
 .address-mail:hover,
 .address-mail:focus {
-    color: #404BBF;
+    color:var(--button-color);
+}
+.address-tel {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    color:var(--text-color);  
 }
 
 .hero {
-    background-color: var(--brend-color); 
+    background-color:var(--brend-color); 
 }
 .pege-hero {
     font-weight: 700;
@@ -79,34 +92,41 @@ body {
     color:var(--white-color);
 }
 .button-hero {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
     color:var(--white-color);
-    background-color: #4D5AE5;
-    cursor: pointer;
+    background-color:var(--logo-color);
+}
+.button-hero:hover,
+.button-hero:focus {
+    background-color:var(--button-color);
 }
 
 /* SECTION 1 */
+.sectin {
+    background-color:var(--white-color);
+}
 .name-strategy {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brend-color);
+    color:var(--brend-color);
 }
 .text-strategy {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
-/* <!-- SECTION 2 --> */
+/* SECTION 2 */
+.sectin {
+    background-color:var(--white-color);
+}
+
 .work {
     font-weight: 700;
     font-size: 36px;
@@ -117,55 +137,48 @@ body {
     color: var(--brend-color);   
 }
 
-.team-list {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    color: var(--brend-color); 
-    background: #F4F4FD;
+/* SECTION 3 */
+.team {
+    background-color:var(--team-color); 
 }
 .team-mark {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brend-color);
+    color:var(--brend-color);
 }
 .team-designer {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 /* FOOTER */
 .footer {
-    background: var(--brend-color);   
+    background-color:var(--brend-color);   
 }
 .text-footer {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color:var(--paragraph-color);
 }
 /* PORTFOLIO BATTON */
 .batton-portfolio{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color:var(--logo-color);
+    background-color: var(--paragraph-color);
     cursor: pointer;
 }
 .batton-portfolio:hover,
 .batton-portfolio:focus {
-    background: #404BBF;
+    background-color:var(--button-color);
     color:var(--white-color);
 }
 /*  PORTFOLIO IMG*/
@@ -177,9 +190,7 @@ body {
     color: var(--brend-color);
 }
 .text-img {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
